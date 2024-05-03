@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokalbokningssystem</title>
+    <link rel="stylesheet" href="Lokaluthyrning.css">
+</head>
+<body>
+    <header>
+        <h1>Våra lokaler</h1>
+    </header>
+    <main>
+        <section class="venue">
+            <h2>Stora salen för föreningar</h2>
+            <img src="stor-sal.jpg" alt="Stor sal">
+            <p>1 200 SEK/4h (medlemsföreningar)<br>
+            1 400 SEK/4h (ickemedlemmar)</p>
+            <button>Boka nu</button>
+        </section>
+        <section class="venue">
+            <h2>Festpris för Stora salen föreningar</h2>
+            <img src="stor-sal-fest.jpg" alt="Stor sal fest">
+            <p>3 000 SEK/6h (medlemsföreningar)<br>
+            3 500 SEK/6h (ickemedlemmar)</p>
+            <button>Boka nu</button>
+        </section>
+        <section class="venue">
+            <h2>Festpris för Stora salen för privatpersoner</h2>
+            <img src="stor-sal-privat.jpg" alt="Stor sal privat">
+            <p>3 500 SEK/6h, deposition 2000 kr</p>
+            <button>Boka nu</button>
+        </section>
+        <section class="venue">
+            <h2>Konferensrummet (20 pers)</h2>
+            <img src="konferensrum.jpg" alt="Konferensrum">
+            <p>800 SEK/4h (medlemsföreningar)<br>
+            1 000 SEK/4h (ickemedlemmar & privatpersoner)</p>
+            <button>Boka nu</button>
+        </section>
+        <section class="venue">
+            <h2>Musikrummet (8 pers)</h2>
+            <img src="musikrum.jpg" alt="Musikrum">
+            <p>400 SEK/4h (medlemsföreningar)<br>
+            600 SEK/4h (icke medlemmar & privatpersoner)</p>
+            <button>Boka nu</button>
+        </section>
+    </main>
+    <footer>
+        <h2>Tillägg utefter önskemål</h2>
+        <ul>
+            <li>Stora ljudanläggningen med mixerbord & 1 mikrofon: 500 SEK</li>
+            <li>Lilla ljudanläggningen & 1 mikrofon: 200 SEK</li>
+            <li>Extra mikrofoner: 50 SEK/mikrofon</li>
+            <li>Städning: 1 500 SEK</li>
+            <li>Möblering: 1 000 SEK</li>
+            <li>Projektor & projektorduk: Kostnadsfritt</li>
+        </ul>
+        <p>&copy; 2024 Lokalbokningssystem</p>
+    </footer>
+
+    <div class="booking-modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Boka lokal</h2>
+            <form>
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="date">Datum:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Tid:</label>
+                <input type="time" id="time" name="time" required>
+                <button type="submit">Boka</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="Lokaluthyrning.js"></script>
+
+</body>
+</html>
